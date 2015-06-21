@@ -18,8 +18,8 @@ public class Post {
         factory = TestDataProvider.create(dataLocation);
     }
 
-    @Test
-    public void testPostWithPostMethod() {
+    @Test(groups = "post")
+    public void postRequest() {
 
         JsonObject request = Json.createObjectBuilder()
                 .add("UserName", factory.data(Repository.USER_NAME))
