@@ -11,7 +11,7 @@ public enum Repository {
     METHOD("method"),
     ENDPOINT("endpoint");
 
-    public static final String PROPERTIES = "src/test/resources/config.properties";
+    public static final String PROPERTIES = "src/test/resources/api.properties";
     private String value;
 
     private Repository(String value) {
