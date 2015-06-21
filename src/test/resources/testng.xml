@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="POST Test Suite">
-    <parameter name="dataLocation" value="src/test/resources/config.properties"/>
+    <parameter name="properties" value="src/test/resources/config.properties"/>
     <test name="Send POST request" preserve-order="true">
         <groups>
             <run>

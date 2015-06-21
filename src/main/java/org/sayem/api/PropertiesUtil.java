@@ -9,17 +9,17 @@ import java.util.Properties;
  * Created by syed.sayem on 6/21/15.
  */
 
-public class TestDataProvider {
+public class PropertiesUtil {
     private String dataLocation;
     private Properties properties;
 
-    private TestDataProvider(String dataLocation) throws IOException {
+    private PropertiesUtil(String dataLocation) throws IOException {
         this.dataLocation = dataLocation;
         loadProperties();
     }
 
-    public static TestDataProvider create(String dataLocation) throws IOException {
-        return new TestDataProvider(dataLocation);
+    public static PropertiesUtil create(String dataLocation) throws IOException {
+        return new PropertiesUtil(dataLocation);
     }
 
     static <T> T valueOf(Class<T> klazz, String arg) {

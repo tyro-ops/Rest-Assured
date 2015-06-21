@@ -10,12 +10,12 @@ import javax.json.JsonObject;
 import java.io.IOException;
 
 public class Post {
-    private TestDataProvider factory;
+    private PropertiesUtil factory;
 
-    @Parameters("dataLocation")
-    public Post(@Optional(Repository.DATA_LOCATION)
-                             String dataLocation) throws IOException {
-        factory = TestDataProvider.create(dataLocation);
+    @Parameters("properties")
+    public Post(@Optional(Repository.PROPERTIES)
+                             String properties) throws IOException {
+        factory = PropertiesUtil.create(properties);
     }
 
     @Test(groups = "post")
