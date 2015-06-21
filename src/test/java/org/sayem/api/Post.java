@@ -10,7 +10,7 @@ import javax.json.JsonObject;
 import java.io.IOException;
 
 public class Post {
-    private static TestDataProvider factory;
+    private TestDataProvider factory;
 
     @Parameters("dataLocation")
     public Post(@Optional(Repository.DATA_LOCATION)
